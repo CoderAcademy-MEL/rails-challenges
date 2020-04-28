@@ -1,6 +1,6 @@
 ## Bitly Clone
 
-## Specs
+### Specs
 
 Website URLs can get really, really long.
 
