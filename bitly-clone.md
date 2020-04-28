@@ -88,7 +88,9 @@ Our app will be beautifully simple. One database table, "links", should cover MV
 
 **Links Table**
 
-![](docs/links.png)
+|id        |original_url     |hash               |created_at         |updated_at         |
+|----------|-----------------|-------------------|-------------------|-------------------|
+|1000000000|http://google.com|gjdgxs             |YYYY-MM-DD HH:MM:SS|YYYY-MM-DD HH:MM:SS|
 
 If we have a route for /:hash, we can pull out the :hash parameter and check our database for a matching link before redirect to the link's original_url.
 
@@ -108,7 +110,9 @@ redirect_to link.original_url
 
 **Links Table**
 
-![](docs/links-1.png)
+|id        |original_url     |updated_at         |created_at         |
+|----------|-----------------|-------------------|-------------------|
+|1000000000|http://google.com|YYYY-MM-DD HH:MM:SS|YYYY-MM-DD HH:MM:SS|
 
 A single model with a single attribute?! OMGROFLCOPTER!
 
